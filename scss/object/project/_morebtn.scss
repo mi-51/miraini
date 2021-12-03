@@ -1,0 +1,14 @@
+.p-morebtn{
+  &--base{
+    text-align: center;
+    padding-bottom: 3.8rem;
+    .c-button{
+      padding: 1.4rem 4rem;
+    }
+  }
+  &--news{
+    width: 95.2rem;
+    margin: 0 auto;
+    text-align: right;
+  }
+}

@@ -1,0 +1,91 @@
+.p-contents{
+  position: relative;
+  overflow: hidden;
+  &__about{
+    margin-top: -5rem;
+    &::before,&::after{
+      position: absolute;
+      bottom: 0;
+      z-index: -5;
+    }
+    &::before{
+      left: -70rem;
+      content: url(../../../img/about-left.png);
+    }
+    &::after{
+      right: -65rem;
+      content: url(../../../img/about-right.png);
+    }
+  }
+  
+  &__news{
+    padding: 8rem 0 8.4rem;
+    &::before,&::after{
+      content: "";
+      position: absolute;
+      z-index: -5;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &::before{
+      top: 2.9rem;
+      right: 2.4rem;
+      width: 29rem;
+      height: 18rem;
+      background-image: url(../../../img/bird-top.png);
+    }
+    &::after{
+      bottom: 3.5REM;
+      left: 1.6rem;
+      width: 19rem;
+      height: 14rem;
+      background-image: url(../../../img/bird-bottom.png);
+    }
+  }
+  
+  &__recruit{
+    height: 54.3rem;
+    background: url(../../../img/bg-recruit.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    .c-wrap{
+      top: 50%;
+      right: 17rem;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__blog{
+    width: 100%;
+    margin-top: 8rem;
+    .p-morebtn{
+      position: relative;
+      padding: 4rem 0;
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 22.2rem;
+        background-color: #DAF2B6;
+        z-index: -10;
+      }
+    }
+  }
+
+
+  &__txt{
+    text-align: center;
+    &--about{
+      font-size: 1.8rem;
+      line-height: 2.2;
+      margin-bottom: 4.5rem;
+    }
+    &--recruit{
+      font-size: 1.8rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+  }
+}

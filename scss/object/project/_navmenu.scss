@@ -1,0 +1,29 @@
+.p-navmenu{
+  ul{
+    display: flex;
+    gap: 4rem;
+    li{
+      a{
+        display: block;
+        font-size: 1.8rem;
+        line-height: 10rem;
+        transition: .3s;
+        &:hover{
+          color: #95C355;
+        }
+      }
+      &:last-of-type{
+        a{
+          border: solid .1rem #95C355;
+          background-color: #95C355;
+          color: #fff;
+          padding: 0 3rem;
+          &:hover{
+            background-color: #fff;
+            color: #95C355;
+          }
+        }
+      }
+    }
+  }
+}

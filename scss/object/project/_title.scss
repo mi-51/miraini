@@ -1,0 +1,17 @@
+.p-title{
+  position: relative;
+  text-align: center;
+  font-size: 3.6rem;
+  line-height: 0.8;
+  padding: 2rem 0 3rem;
+  span{
+    font-size: 1.4rem;
+  }
+  &::before{
+    content: url(../../../img/icon-leaf.png);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -60%);
+  }
+}

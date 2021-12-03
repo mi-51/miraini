@@ -1,0 +1,17 @@
+.c-tag{
+  width: 13.5rem;
+  height: 3.4rem;
+  text-align: center;
+  border-radius: .5rem;
+  color: #fff;
+  line-height: 3.4rem;
+  &--blue{
+    background-color: #66AACC;
+  }
+  &--orange{
+    background-color: #D9AD57;
+  }
+  &--green{
+    background-color: #97BA61;
+  }
+}

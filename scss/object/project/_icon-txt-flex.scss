@@ -1,0 +1,35 @@
+.p-icon-txt-flex{
+  position: relative;
+  display: flex;
+  align-items: center;
+  img{
+    height: 4.7rem;
+  }
+  p{
+    font-size: 3.2rem;
+    padding-left: .6rem;
+  }
+  &::after,&::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: .97rem;
+    height: .2rem;
+    background-color: #707070;
+    border-radius: 5rem;
+  }
+  &::before{
+    top: 37%;
+    transform: rotate(45deg);
+  }
+  &::after{
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  +p{
+    margin-top: 4.2rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}

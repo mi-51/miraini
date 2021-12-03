@@ -1,0 +1,16 @@
+.p-mainvisual{
+  height: 61rem;
+  margin-top: 10rem;
+  position: relative;
+  background: url(../../../img/main-visual.jpg) no-repeat ;
+  background-size: cover;
+  p{
+    position: absolute;
+    top: 16rem;
+    left: 7.8rem;
+    font-family: "筑紫B丸ゴシック";
+    font-size: 7rem;
+    color: #6A6A6A;
+    line-height: 1.4;
+  }
+}

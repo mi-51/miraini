@@ -1,0 +1,39 @@
+.p-recruit-cards{
+  display: flex;
+  gap: 2rem;
+  &__item{
+    position: relative;
+    background-color: #fff;
+    width: 14rem;
+    a{
+      display: block;
+      text-align: center;
+      padding: 2.4rem 0 2.1rem;
+      img{
+        height: 7rem;
+        width: 7rem;
+        object-fit: cover;
+      }
+      p{
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+      }
+    }
+    &::before,&::after{
+      content: "";
+      position: absolute;
+      right: 2rem;
+      width: .5rem;
+      height: .1rem;
+      background-color: #3b3b33;
+    }
+    &::before{
+      bottom: 20%;
+      transform: rotate(45deg);
+    }
+    &::after{
+      bottom: 17.5%;
+      transform: rotate(-45deg);
+    }
+  }
+}
