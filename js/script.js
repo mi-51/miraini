@@ -9,6 +9,13 @@ $(function () {
 });
 
 $(function () {
+  $('.p-storeList__ttl').on('click', function () {
+    $(this).next().slideToggle(230);
+    $(this).toggleClass('opened');
+  });
+});
+
+$(function () {
   $('a[href^="#"]').click(function () {
     let w = $(window).width();
     let headerHight;

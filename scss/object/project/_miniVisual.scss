@@ -1,0 +1,18 @@
+.p-miniVisual{
+  margin-top: 10rem;
+  width: 100%;
+  height: 20rem;
+  background-color: #ABCC7A;
+  text-align: center;
+  &__ttl{
+    color: #fff;
+    font-size: 4rem;
+    padding-top: 6.8rem;
+    line-height: 1.2;
+    span{
+      display: block;
+      font-size: 2.2rem;
+      color: #fff;
+    }
+  }
+}

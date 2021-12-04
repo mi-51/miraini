@@ -1,0 +1,61 @@
+.p-pageNav{
+  margin-top: 7rem;
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    li{
+      color: #97BA61;
+      a{
+        display: block;
+        padding: 1.1rem 1.4rem;
+        border: solid .1rem #97BA61;
+        font-size: 1.6rem;
+      }
+      &:first-of-type,
+      &:last-of-type{
+        position: relative;
+        &::before,&::after{
+          content: "";
+          position: absolute;
+          width: 1rem;
+          height: .1rem;
+          background-color: #97BA61;
+        }
+        &::before{
+          top: 45%;
+        }
+        &::after{
+          top: 60%;
+        }
+      }
+      &:first-of-type{
+        color: #fff;
+        a{
+          background-color: #97BA61;
+        }
+        &::before,&::after{
+          left: -3rem;
+        }
+        &::before{
+          transform: rotate(-45deg);
+        }
+        &::after{
+          transform: rotate(45deg);
+        }
+      }
+      &:last-of-type{
+        &::before,&::after{
+          right: -3rem;
+        }
+        &::before{
+          transform: rotate(45deg);
+        }
+        &::after{
+          transform: rotate(-45deg);
+        }
+      }
+    } 
+  }
+}

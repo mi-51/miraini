@@ -26,4 +26,15 @@
       }
     }
   }
+
+  &--footer{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    li a{
+      display: block;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+  }
 }

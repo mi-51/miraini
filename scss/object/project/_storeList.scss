@@ -1,0 +1,100 @@
+.p-storeList{
+  &__ttl{
+    position: relative;
+    background-color: #97BA61;
+    color: #fff;
+    font-size: 1.9rem;
+    padding: 1.3rem 0 1.3rem 1rem;
+    cursor: pointer;
+    transition: all 1s;
+    &::before,&::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: .8rem;
+      height: .2rem;
+      background-color: #fff;
+    }
+    &::before{
+      transform: rotate(30deg);
+      right: 2.3rem;
+    }
+    &::after{
+      transform: rotate(-30deg);
+      right: 1.8rem;
+    }
+    &.opened{
+      &::before{
+        transform: rotate(-30deg);
+      }
+      &::after{
+        transform: rotate(30deg);
+      }
+    }
+  }
+  &__items{
+    // display: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    li{
+      width: calc(100% / 3 - 2rem);
+      &:hover p{
+        color: #97BA61;
+      }
+      &:hover a{
+        border-color: #97BA61;
+      }
+      &:hover a::before,
+      &:hover a::after{
+        background-color: #97BA61;
+      }
+      a{
+        position: relative;
+        display: block;
+        font-size: 1.9rem;
+        padding-bottom: 1rem;
+        border-bottom: solid .1rem #BFBFBF;
+        p{
+          padding-left: 2rem;
+        }
+        &::before,&::after{
+          content: "";
+          position: absolute;
+          right: 1.7rem;
+          width: 1rem;
+          height: .1rem;
+          background-color: #707070;
+        }
+        &::before{
+          top: 17%;
+          transform: rotate(45deg);
+        }
+        &::after{
+          top: 40%;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    &.opened{
+      display: flex;
+    }
+  }
+  &--osaka{
+    margin-bottom: 2rem;
+  }
+  &--hyogo,
+  &--kyoto,
+  &--nara{
+    width: calc(100% / 3 - 2rem);
+    .p-storeList__items{
+      display: block;
+      li{
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

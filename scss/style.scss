@@ -3,6 +3,7 @@
 @import "./foundation/reset";
 
 @import "./layout/header";
+@import "./layout/footer";
 
 @import "./object/component/card";
 @import "./object/component/button";
@@ -21,3 +22,6 @@
 @import "./object/project/infoList";
 @import "./object/project/recruit-cards";
 @import "./object/project/blog-cards";
+@import "./object/project/storeList";
+@import "./object/project/miniVisual";
+@import "./object/project/pageNav";

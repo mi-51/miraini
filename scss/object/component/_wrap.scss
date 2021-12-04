@@ -1,3 +1,11 @@
 .c-wrap{
   position: absolute;
+  &__col3{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  &__none{
+    display: none;
+  }
 }
